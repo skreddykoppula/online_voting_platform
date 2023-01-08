@@ -32,11 +32,7 @@
 </head>
 <body>
     <%- include('heading.ejs') %>
-    <!-- <span style="color:black">></span>
-        <a href="/electionpage" class="text-black">Home page</a> -->
         <p class="py-2"> <a href="/" class="bg-red-600 text-white px-4 py-1 rounded font-medium mr-2 mb-2" >Home page</a> </p>
-        <!-- <span style="color:black">></span>
-        <a href="/electionpage/<%= id %>" class="text-black">Election page</a> -->
         <p class="py-2"> <a href="/" class="bg-red-600 text-white px-4 py-1 rounded font-medium mr-2 mb-2" >Election page</a> </p>
         <h3 class="text-4xl my-4 font-semibold"><%= title %></h3>
         <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
@@ -66,13 +62,7 @@
                                     <p class="text-black text-md my-2">Description: <%= questions[i].description %></p>
                                 </div>
                                 <div class="flex gap-2 text-black">
-                                    <!-- <div class="rounded w-fit px-2 py-1 flex gap-2 cursor-pointer ">                                                                        
-                                        <a href="/electionpage/<%= id %>/que/<%= questions[i].id %>/edit" class="text-sm text-black">Edit question</a>
-                                    </div> -->
                                     <% if ((questions.length) > 1) { %>
-                                    <!-- <div class="rounded w-fit px-2 py-1 flex gap-2 cursor-pointer">                                    
-                                        <a onclick="removeQuestion(<%= questions[i].id %>)" class="text-sm text-black">Delete question</a>
-                                    </div> -->
                                     <% } %>
                                 </div>
                             </div>
