@@ -10,12 +10,12 @@ const path = require("path");
 const bcrypt = require("bcrypt");
 const session = require("express-session");
 const passport = require("passport");
-// eslint-disable-next-line no-unused-vars
+
 const { AsyncLocalStorage } = require("async_hooks");
 const flash = require("connect-flash");
 const saltRounds = 10;
 app.use(bodyParser.json());
-// eslint-disable-next-line no-undef
+
 app.set("views", path.join(__dirname, "views"));
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
