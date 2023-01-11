@@ -25,7 +25,7 @@ app.use(csrf("this_should_be_32_character_long", ["POST", "PUT", "DELETE"]));
 
 app.use(
   session({
-    secret: "my-super-secret-key-2837428907583420",
+    secret: "my-super-secret-key-286428903456420",
     cookie: {
       maxAge: 24 * 60 * 60 * 1000,
     },
